@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="utbm.projet.formation.entity.Course" optimistic-lock="version" schema="Formation" table="Course">
+    <id name="code" type="string">
+      <column name="CODE"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="title" type="string">
+      <column length="20" name="TITLE" not-null="true"/>
+    </property>
+  </class>
+  
+
+</hibernate-mapping>
