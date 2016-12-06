@@ -1,0 +1,17 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="utbm.projet.formation.entity">
+	<class name="Course_Session" table="course_session">
+		<id name="id_course_session" column="COURSE_SESSION_ID">
+		    <generator class="identity"/>
+		</id>
+			
+		<property name="start_date" column="START_DATE" not-null="true" />
+                <property name="end_date" column="END_DATE" not-null="true" />
+                <many-to-one name="location" column="ID" not-null="true"/>
+
+                <many-to-one name="course" column="CODE" not-null="true"/>
+          
+	</class>			
+</hibernate-mapping>

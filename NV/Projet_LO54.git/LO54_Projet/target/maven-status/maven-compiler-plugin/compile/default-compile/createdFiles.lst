@@ -1,0 +1,6 @@
+utbm\projet\formation\entity\Client.class
+utbm\projet\formation\entity\Appli.class
+utbm\projet\formation\entity\Location.class
+utbm\projet\formation\entity\Course.class
+utbm\projet\formation\entity\Course_Session.class
+utbm\projet\formation\util\HibernateUtil.class
